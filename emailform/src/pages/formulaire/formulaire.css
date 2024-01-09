@@ -1,0 +1,76 @@
+/* formulaire.css */
+
+/* Style global du formulaire */
+form {
+    background-color: #333; /* Couleur de fond sombre */
+    color: #fff; /* Couleur du texte clair */
+    padding: 20px; /* Espace intérieur */
+    border-radius: 10px; /* Bords arrondis */
+    max-width: 400px; /* Largeur maximale */
+    margin: auto; /* Centrage */
+}
+
+/* Style des étiquettes */
+label {
+    display: block; /* Affichage en bloc */
+    margin-bottom: 5px; /* Espace sous l'étiquette */
+    font-weight: bold; /* Police en gras */
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Largeur complète */
+    padding: 10px; /* Espace intérieur */
+    margin-bottom: 20px; /* Espace sous le champ */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bords arrondis */
+    box-sizing: border-box; /* Taille de boîte */
+}
+
+/* Style du bouton */
+button {
+    width: 100%; /* Largeur complète */
+    padding: 10px; /* Espace intérieur */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Bords arrondis */
+    background-color: #007bff; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur pointeur */
+}
+
+/* Style du bouton au survol */
+button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+.link {
+    text-decoration: none;
+    color: blue;
+    display: flex;
+    justify-content: center;
+    font-weight: bold; /* Texte en gras */
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red); /* Dégradé de couleurs */
+    -webkit-background-clip: text; /* Clip le fond sur le texte (pour Webkit) */
+    background-clip: text; /* Clip le fond sur le texte */
+    color: transparent; /* Rend le texte transparent pour afficher le fond */
+    transition: transform 0.3s ease; /* Transition douce pour l'effet de survol */
+}
+.link:hover {
+    text-decoration: underline; /* Souligne le texte */
+    transform: translateY(-5px); /* Déplace légèrement vers le haut */
+    color: #000000; /* Rétablit la couleur du texte (si nécessaire) */
+}
+
+/* Animation du fond arc-en-ciel */
+@keyframes rainbowText {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
+}
+
+/* Application de l'animation sur le lien */
+.link {
+    animation: rainbowText 5s ease infinite;
+    background-size: 200% auto; /* Taille du fond pour l'animation */
+}
